@@ -93,3 +93,9 @@
     set ai "Auto indent
     set si "Smart indent
     set wrap "Wrap lines
+
+""" VIM-PLUG
+call plug#begin('~/.vim/plugged')
+
+
+call plug#end()
