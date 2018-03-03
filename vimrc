@@ -97,5 +97,7 @@
 """ VIM-PLUG
 call plug#begin('~/.vim/plugged')
 
+    " Insert plugins here
+    Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
