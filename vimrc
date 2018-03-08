@@ -23,7 +23,7 @@
     set ffs=unix,dos,mac
 
 """ VIM-PLUG
-call plug#begin('~/.vim/bundle')
+call plug#begin('~/.vim/plugged')
 
     " Insert plugins here
     Plug 'ctrlpvim/ctrlp.vim'
