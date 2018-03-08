@@ -51,8 +51,8 @@
     set termguicolors
     " Enable syntax highlighting
     syntax enable 
-    "colorscheme delek
-    set background=dark
+    "colorscheme gruvbox
+    set background=light
 
 """ WORKING WITH SPLITS
 
@@ -105,7 +105,7 @@
     set wrap "Wrap lines
 
 """ VIM-PLUG
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/bundle')
 
     " Insert plugins here
     Plug 'ctrlpvim/ctrlp.vim'
