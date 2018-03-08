@@ -22,6 +22,16 @@
     " Use Unix as the standard file type
     set ffs=unix,dos,mac
 
+""" VIM-PLUG
+call plug#begin('~/.vim/bundle')
+
+    " Insert plugins here
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'fatih/vim-go'
+    Plug 'lifepillar/vim-solarized8'
+
+call plug#end()
+
 """ USER INTERFACE
 
     " Height of the command bar
@@ -51,7 +61,7 @@
     set termguicolors
     " Enable syntax highlighting
     syntax enable 
-    "colorscheme gruvbox
+    colorscheme solarized8
     set background=light
 
 """ WORKING WITH SPLITS
@@ -104,11 +114,3 @@
     set si "Smart indent
     set wrap "Wrap lines
 
-""" VIM-PLUG
-call plug#begin('~/.vim/bundle')
-
-    " Insert plugins here
-    Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'fatih/vim-go'
-
-call plug#end()
