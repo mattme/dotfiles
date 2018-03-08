@@ -47,6 +47,8 @@
 
 """ COLORS AND FONTS
 
+    " Enable more colors
+    set termguicolors
     " Enable syntax highlighting
     syntax enable 
     "colorscheme delek
