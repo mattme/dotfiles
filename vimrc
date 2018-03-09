@@ -11,12 +11,6 @@ set tm=500
 set encoding=utf8
 set ffs=unix,dos,mac " Use Unix as the standard file type
 
-" Easier split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 " VIM-PLUG
 
 call plug#begin('~/.vim/plugged')
@@ -71,3 +65,25 @@ set tw=80
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+" Easier split navigation
+" (Vim only; see below for extended functionality for Neovim)
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" NEOVIM SPECIFICS
+if has ('nvim')
+    :tnoremap <Esc> <C-\><C-n> " Exit terminal mode with ESC
+
+    " Use CTRL+{h,j,k,l} to navigate windows from any mode
+    tnoremap <C-h> <C-\><C-N><C-w>h
+    tnoremap <C-j> <C-\><C-N><C-w>j
+    tnoremap <C-k> <C-\><C-N><C-w>k
+    tnoremap <C-l> <C-\><C-N><C-w>l
+    inoremap <C-h> <C-\><C-N><C-w>h
+    inoremap <C-j> <C-\><C-N><C-w>j
+    inoremap <C-k> <C-\><C-N><C-w>k
+    inoremap <C-l> <C-\><C-N><C-w>l
+endif
