@@ -54,8 +54,8 @@ set expandtab " Use spaces instead of tabs
 set smarttab " Be smart when using tabs
 
 " 1 tab == X spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on X characters
 set lbr
