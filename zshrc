@@ -95,3 +95,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Set $GOPATH
 export GOPATH=$HOME/dev/go
+
+# Set npm default path to ~/.npm-global/
+export PATH=~/.npm-global/bin:$PATH
+
