@@ -16,7 +16,7 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lifepillar/vim-solarized8'
-Plug 'w0rp/ale'
+Plug 'w0rp/ale' " See configuration of ALE below
 call plug#end()
 
 " USER INTERFACE
@@ -87,3 +87,12 @@ if has ('nvim')
     inoremap <C-k> <C-\><C-N><C-w>k
     inoremap <C-l> <C-\><C-N><C-w>l
 endif
+
+" ALE CONFIGURATION
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\ }
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\ }
+let g:ale_fix_on_save = 1
