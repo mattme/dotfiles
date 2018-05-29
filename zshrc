@@ -96,4 +96,5 @@ source $ZSH/oh-my-zsh.sh
 # Set $GOPATH
 export GOPATH=$HOME/dev/go
 
-
+# Python: Add `pip install --user` path to $PATH
+export PATH=/home/matthias/.local/bin/:$PATH
