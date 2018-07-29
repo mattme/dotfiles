@@ -16,7 +16,8 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lifepillar/vim-solarized8'
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'
+Plug 'w0rp/ale'
 call plug#end()
 
 " USER INTERFACE
