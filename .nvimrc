@@ -33,8 +33,8 @@ set statusline=\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c " Format the stat
 
 set termguicolors " Enable more colors
 syntax enable " Enable syntax highlighting
-colorscheme solarized8
-set background=light
+colorscheme solarized8_dark_flat
+set background=dark
 
 " SEARCH
 
