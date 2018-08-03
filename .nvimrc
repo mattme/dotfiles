@@ -16,7 +16,7 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lifepillar/vim-solarized8'
-"Plug 'fatih/vim-go'
+Plug 'fatih/vim-go'
 Plug 'w0rp/ale'
 call plug#end()
 
@@ -88,4 +88,12 @@ if has ('nvim')
     inoremap <C-k> <C-\><C-N><C-w>k
     inoremap <C-l> <C-\><C-N><C-w>l
 endif
+
+" FILE TYPE SETTINGS 
+
+" Go uses tabs 
+au FileType go set noexpandtab tabstop=4 shiftwidth=4
+
+" Make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
+au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
