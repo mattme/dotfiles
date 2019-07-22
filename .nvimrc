@@ -13,7 +13,7 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 
 " VIM-PLUG
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'fatih/vim-go'
 call plug#end()
 
