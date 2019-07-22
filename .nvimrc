@@ -15,6 +15,7 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'fatih/vim-go'
+Plug 'crusoexia/vim-monokai'
 call plug#end()
 
 " USER INTERFACE
@@ -30,7 +31,7 @@ set statusline=\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c " Format the stat
 
 set termguicolors " Enable more colors
 syntax enable " Enable syntax highlighting
-colorscheme solarized8_high
+colorscheme monokai
 set background=dark
 
 " SEARCH
