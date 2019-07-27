@@ -23,3 +23,9 @@ export EDITOR="nvim"
 autoload -Uz promptinit
 promptinit
 prompt suse # Set prompt theme
+
+#########
+#  FZF  #
+#########
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
