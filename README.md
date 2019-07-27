@@ -5,6 +5,6 @@ These are just my dotfiles.
 
 # Symlink dotfiles
 ```
-ln -sf ~/.dotfiles/nvimrc ~/.config/nvim/init.vim
-ln -sf ~/.dotfiles/zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.nvimrc ~/.config/nvim/init.vim
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
