@@ -2,10 +2,19 @@
 #  BASIC STUFF  #
 ################# 
 
-#Command completion
+# Command completion
 autoload -Uz compinit 
 compinit
 
+#############
+#  ALIASES  #
+#############
+
+# Use Neovim
+alias vim=nvim
+
+# CD into dotfiles
+alias dotfiles="cd ~/.dotfiles"
 
 ###############
 #  VARIABLES  #
@@ -29,7 +38,9 @@ SAVEHIST=1000
 
 autoload -Uz promptinit
 promptinit
-prompt suse # Set prompt theme
+
+# Set prompt theme
+prompt suse 
 
 #########
 #  FZF  #
