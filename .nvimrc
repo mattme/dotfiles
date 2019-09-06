@@ -14,7 +14,6 @@ set ffs=unix,dos,mac " Use Unix as the standard file type
 " VIM-PLUG
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'fatih/vim-go'
 Plug 'crusoexia/vim-monokai'
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
